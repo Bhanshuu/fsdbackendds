@@ -1,8 +1,8 @@
 const fs=require('fs');
 
-const newdata="I am new data";
-// const data=fs.readFileSync('./data.txt', 'utf8');
+fs.readFile("./data.txt","utf8",(err,data)=>{
+    if(err) throw err;
+    console.log("data read from file:",data);
+}
 
-fs.writeFileSync('./data.txt', newdata);
-
-// console.log(data);
+)
