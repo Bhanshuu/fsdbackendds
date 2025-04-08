@@ -4,7 +4,7 @@ const Delete = () => {
     const handledelete = async (e) => {
         e.preventDefault()
         const id = e.target.id.value;
-        await axios.delete(`https://fsdbackenddsb2.onrender.com/users/${id}`)
+        await axios.delete(`https://fsdbackendds.onrender.com/users/${id}`)
         alert('User deleted Successfully')
     }
   return (
